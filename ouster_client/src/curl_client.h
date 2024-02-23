@@ -89,9 +89,8 @@ class CurlClient : public ouster::util::HttpClient {
                 // HTTP 5XX means a server error, so we should re-attempt.
                 // log a warning and sleep before re-attempting
                 ouster::sensor::logger().warn(
-                    std::string("Re-attempting CurlClient::execute_get after "
-                                "failure for url: ") +
-                        "[{}] with the code: [{}] - and return: {}",
+                    "Re-attempting CurlClient::execute_get after failure for "
+                    "url: [{}] with the code: [{}] - and return: {}",
                     url, http_code, buffer);
                 std::this_thread::sleep_for(
                     std::chrono::milliseconds(retry_delay_ms));
