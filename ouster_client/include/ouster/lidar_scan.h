@@ -143,7 +143,7 @@ class LidarScan {
     template <typename Iterator>
     LidarScan(size_t w, size_t h, Iterator begin, Iterator end,
               size_t columns_per_packet = DEFAULT_COLUMNS_PER_PACKET)
-        : LidarScan(w, h, {begin, end}, columns_per_packet){};
+        : LidarScan(w, h, {begin, end}, columns_per_packet){}
 
     /**
      * Initialize a lidar scan from another lidar scan.
