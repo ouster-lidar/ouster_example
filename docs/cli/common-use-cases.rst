@@ -45,7 +45,7 @@ using:
 
 .. code:: bash
 
-    $ ouster-cli source <SENSOR_HOSTNAME> info > <SENSOR_HOSTNAME>.json
+    $ ouster-cli source <SENSOR_HOSTNAME> metadata > <SENSOR_HOSTNAME>.json
 
 This will generate a ``.json`` file named ``<SENSOR_HOSTNAME>.json`` with the metadata inside. To
 output it to a differently named file, simply change ``<SENSOR_HOSNTAME>.json`` to
